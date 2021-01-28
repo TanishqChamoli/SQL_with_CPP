@@ -9,6 +9,10 @@
 
 using namespace std;
 
+#define URL "tcp://127.0.0.1:3306"
+#define USER "root"
+#define PASSWORD "password"
+
 class data_fetch
 {
 public:
@@ -60,7 +64,7 @@ public:
         sql::Connection *con;
         sql::Driver *driver;
         driver = get_driver_instance();
-        con = driver->connect("tcp://127.0.0.1:3306", "root", "password");
+        con = driver->connect(URL, USER, PASSWORD);
         con->setSchema("admin_push");
         for (int i = 0; i < rep; i++)
         {
@@ -98,7 +102,7 @@ public:
         sql::Connection *con;
         sql::Driver *driver;
         driver = get_driver_instance();
-        con = driver->connect("tcp://127.0.0.1:3306", "root", "password");
+        con = driver->connect(URL, USER, PASSWORD);
         con->setSchema("admin_push");
         for (int i = 0; i < rep; i++)
         {
@@ -132,7 +136,7 @@ public:
         sql::Connection *con;
         sql::Driver *driver;
         driver = get_driver_instance();
-        con = driver->connect("tcp://127.0.0.1:3306", "root", "password");
+        con = driver->connect(URL, USER, PASSWORD);
         con->setSchema("admin_push");
         for (int i = 0; i < rep; i++)
         {
@@ -173,7 +177,7 @@ public:
         sql::Connection *con;
         sql::Driver *driver;
         driver = get_driver_instance();
-        con = driver->connect("tcp://127.0.0.1:3306", "root", "password");
+        con = driver->connect(URL, USER, PASSWORD);
         con->setSchema("admin_push");
         for (int i = 0; i < rep; i++)
         {
@@ -215,7 +219,7 @@ public:
         sql::Connection *con;
         sql::Driver *driver;
         driver = get_driver_instance();
-        con = driver->connect("tcp://127.0.0.1:3306", "root", "password");
+        con = driver->connect(URL, USER, PASSWORD);
         con->setSchema("admin_push");
         for (int i = 0; i < rep; i++)
         {
@@ -254,7 +258,7 @@ public:
         sql::Connection *con;
         sql::Driver *driver;
         driver = get_driver_instance();
-        con = driver->connect("tcp://127.0.0.1:3306", "root", "password");
+        con = driver->connect(URL, USER, PASSWORD);
         con->setSchema("admin_push");
         for (int i = 0; i < rep; i++)
         {
@@ -296,7 +300,7 @@ public:
         sql::Connection *con;
         sql::Driver *driver;
         driver = get_driver_instance();
-        con = driver->connect("tcp://127.0.0.1:3306", "root", "password");
+        con = driver->connect(URL, USER, PASSWORD);
         con->setSchema("admin_push");
         for (int i = 0; i < rep; i++)
         {
@@ -330,7 +334,7 @@ public:
         sql::Connection *con;
         sql::Driver *driver;
         driver = get_driver_instance();
-        con = driver->connect("tcp://127.0.0.1:3306", "root", "password");
+        con = driver->connect(URL, USER, PASSWORD);
         con->setSchema("admin_push");
         for (int i = 0; i < rep; i++)
         {
